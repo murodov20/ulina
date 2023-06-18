@@ -1,0 +1,24 @@
+.latest {
+  margin-top: 6rem;
+
+
+  h2 {
+    @include font_1(5rem, 400, 6rem);
+    color: $main_text_color;
+  }
+
+  &__description {
+    @include font_2;
+    color: $secondary_color;
+  }
+
+  &__items {
+    margin-top: 3rem;
+    @include flex;
+    gap: 3rem;
+
+    .product__image {
+      padding-bottom: 7rem;
+    }
+  }
+}

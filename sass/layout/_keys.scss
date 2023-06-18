@@ -1,0 +1,15 @@
+.keys {
+  margin-top: 8rem;
+  @include flex;
+  gap: 10rem;
+
+  h3 {
+    @include font_1(1.8rem, 500, 6rem);
+    color: $main_text_color;
+  }
+
+  p {
+    @include font_1(1.6rem, 300, 2.5rem);
+    color: $main_p_color;
+  }
+}

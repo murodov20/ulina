@@ -1,0 +1,49 @@
+.product {
+
+  &__image {
+    background-color: $card_bg;
+    height: 33rem;
+  }
+
+  &__review {
+    @include flex(flex-start, center);
+
+    i {
+      color: $yellow;
+    }
+  }
+
+  &__title {
+    @include font_1(2.2rem, 500, 6rem);
+    color: $main_text_color;
+  }
+
+  &__info {
+    @include flex(space-between, baseline);
+  }
+
+  &__price {
+    @include font_1(2.5rem, 600, 6rem);
+    color: $info_color;
+
+    .old-price {
+      margin-left: 1.8rem;
+      color: $secondary_color;
+      @include font_1(2rem, 400, 6rem);
+      text-decoration: line-through;
+    }
+  }
+
+  &__sizes {
+    @include flex;
+    gap: 1rem;
+
+    span {
+      color: $secondary_color;
+      border-radius: .2rem;
+      border: .1rem solid $secondary_color;
+      padding: .2rem .7rem;
+      @include font_1(1.6rem, 500, 2.5rem);
+    }
+  }
+}

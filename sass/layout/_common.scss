@@ -1,0 +1,66 @@
+.flex-auto-width {
+  flex: 0 0 auto;
+}
+
+.column {
+  flex: 1;
+}
+
+.has-flex-img {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.has-flex-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.button {
+  background-color: $primary_color;
+  color: $white;
+  padding: 1.1rem 3rem;
+  border-radius: 3.8rem;
+  @include font_1;
+}
+
+.text {
+  @include font_1(1.6rem, 300, 2.5rem);
+  color: $secondary_color;
+}
+
+.top-left-badge {
+  color: $white;
+  background-color: $badge_color;
+  padding: .2rem .7rem;
+  position: absolute;
+  top: 1.1rem;
+  left: 2.2rem;
+  @include font_1(1.2rem, 300, 2.5rem);
+  text-transform: uppercase;
+}
+
+.top-right-badge {
+  color: $white;
+  background-color: $red;
+  padding: .2rem .7rem;
+  position: absolute;
+  top: 1.1rem;
+  right: 2.2rem;
+  @include font_1(1.2rem, 300, 2.5rem);
+  text-transform: uppercase;
+}
+
+.bg-green {
+  background-color: $badge_color;
+}
+
+.bg-red {
+  background-color: $red;
+}

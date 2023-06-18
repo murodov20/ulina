@@ -1,0 +1,47 @@
+header {
+  background-color: $header_bg;
+}
+
+nav {
+  height: 10rem;
+  @include flex(space-between, stretch);
+
+  .menu {
+    @include flex(center, stretch);
+    gap: 3rem;
+
+    a {
+      @include font_1;
+      color: $main_a_color;
+      @include flex;
+
+      &.active, &:hover {
+        font-weight: 500;
+        border-bottom: .1rem solid $nav_border;
+      }
+    }
+
+  }
+
+  .nav-icons {
+    @include font_1;
+    @include flex;
+    gap: 2rem;
+    color: $icon_color;
+
+    .count {
+      position: absolute;
+      top: -1rem;
+      right: -1rem;
+      background-color: $red;
+      color: white;
+      border-radius: 50%;
+      font-size: 1rem;
+      padding: 0 .7rem;
+    }
+  }
+}
+
+nav+hr {
+  border: 0.08rem solid $nav_border;
+}
