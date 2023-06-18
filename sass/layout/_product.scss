@@ -46,4 +46,16 @@
       @include font_1(1.6rem, 500, 2.5rem);
     }
   }
+
+  &__dots {
+    @include flex;
+    gap: 1rem;
+
+    span {
+      border-radius: 50%;
+      width: 11px;
+      height: 11px;
+      display: inline-block;
+    }
+  }
 }

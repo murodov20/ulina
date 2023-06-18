@@ -2,6 +2,20 @@
   flex: 0 0 auto;
 }
 
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.balanced {
+  p {
+    @include flex(flex-start, center);
+  }
+}
+
 .column {
   flex: 1;
 }
@@ -63,4 +77,8 @@
 
 .bg-red {
   background-color: $red;
+}
+
+.bg-brown {
+  background-color: $brown;
 }

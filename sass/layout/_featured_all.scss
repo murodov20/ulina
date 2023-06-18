@@ -1,0 +1,32 @@
+.featured-all {
+  margin-top: 12rem;
+
+  h2 {
+    @include font_1(5rem, 400, 6rem);
+    color: $main_text_color;
+  }
+
+  &__description {
+    @include font_2;
+    color: $secondary_color;
+  }
+
+  &__items {
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+
+  &__menu {
+    @include flex;
+    gap: 2rem;
+    a {
+      @include font_1(2.6rem, 300, 6rem);
+      color: $secondary_color;
+
+      &.active, &:hover {
+        color: $main_text_color;
+      }
+    }
+  }
+}

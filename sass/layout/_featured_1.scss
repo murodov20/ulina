@@ -1,0 +1,80 @@
+.featured-1 {
+  margin-top: 8rem;
+  padding: 8.8rem 0;
+  background-color: $feature_bg;
+
+  .container {
+    @include flex;
+  }
+
+  &__description {
+    @include font_1(2rem, 400, 6rem);
+    color: $primary_color;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    @include font_1(5rem, 500, 6rem);
+    color: $h1_color;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    @include font_1(1.8rem, 300, 2.8rem);
+    color: $secondary_color;
+    margin-bottom: 2.5rem;
+  }
+
+  &__price {
+    @include font_1(5rem, 500, 6rem);
+    color: $info_color;
+
+    .old-price {
+      margin-left: 1.8rem;
+      color: $secondary_color;
+      @include font_1(2.4rem, 400, 6rem);
+      text-decoration: line-through;
+    }
+  }
+
+  .button {
+    margin-left: 7rem;
+    padding: 1.1rem 3.6rem;
+  }
+
+  &__ending-text {
+    @include font_1(2rem, 400, 6rem);
+    color: $main_text_color;
+    margin: .7rem 0;
+  }
+
+  &__time {
+    @include flex(center);
+    flex-direction: column;
+    @include font_1(1.6rem, 300, 6rem);
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 2.7rem;
+    position: relative;
+
+    span {
+      font-family: 'Outfit', sans-serif;
+      background-color: $white;
+      @include font_1(3rem, 300, 6rem);
+      border-radius: 50%;
+      width: 83px;
+      height: 83px;
+      @include flex(center);
+    }
+
+    &:not(:first-child) {
+      &::before {
+        content: ":";
+        position: absolute;
+        top: 1rem;
+        left: -1.8rem;
+        @include font_1(3rem, 300, 6rem);
+      }
+    }
+  }
+}
